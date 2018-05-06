@@ -3,8 +3,6 @@
  *    Level 0
  */
 
-import java.io.File;
-import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.JOptionPane;
@@ -19,7 +17,9 @@ public class Code4Life {
 		if (hours <= 2)
 			System.out.println("STOP WATCHING YOUTUBE AND CODE!!!!!!!!!!!!!!!!!!!!");
 		//3.  If it is greater than or equal to 3 AND less than or equal to 5, tell them they're a Code Ninja
-		
+		if (hours >= 3 && hours <5) {
+			System.out.println("Code Ninja!");
+		}
 		//4.  If it is more than 5, call the method below to play the Batman theme song. 
 		else if (hours > 5)
 			playBatmanTheme();
