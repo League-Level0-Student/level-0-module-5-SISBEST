@@ -1,4 +1,4 @@
-package InProgress;
+
 import java.util.Random;
 
 import javax.swing.JOptionPane;
@@ -32,7 +32,7 @@ void skill2() {
 	}
 }
 
-void skill3() { // Get a random number that is less than 20 and print it to the console 
+void skill3() {
 Random iamagenerator = new Random();
 int num1 = iamagenerator.nextInt(20);
 int num2 = iamagenerator.nextInt(10);
