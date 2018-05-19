@@ -1,3 +1,6 @@
+package InProgress;
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPractice {
@@ -21,28 +24,19 @@ if (inttall< 36)
 	JOptionPane.showMessageDialog(null, "Eat your Wheaties!");
 }
 
-void skill2() { // Write a loop to print every third number between 1 and 30 to the console 
-
-
-
-
-
-
-
+void skill2() { 
+	for (int i = 0; i<30; i++) {
+		if (i%3 == 0) {
+			System.out.println(i);
+		}
+	}
 }
 
 void skill3() { // Get a random number that is less than 20 and print it to the console 
-
-
-
-// Get another random number that is less than 10 and print it to the console 
-
-
-
-// Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction 
-
-
-
+Random iamagenerator = new Random();
+int num1 = iamagenerator.nextInt(20);
+int num2 = iamagenerator.nextInt(10);
+JOptionPane.showMessageDialog(null, "Random Number <10 - Random Number Less than 20 = " + (num1 - num2));
 }
 
 void skill4() {
