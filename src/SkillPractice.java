@@ -12,27 +12,13 @@ SkillPractice skills = new SkillPractice();
 }
 
 void skill1() {
-// Use pop-ups for the following.
-// Ask the user how many dimes they have
-
-
-
-
-// Tell them how many cents they have (hint multiply by 10)
-
-
-
-
-// Ask the user how tall they are (inches)
-
-
-
-
-// If they are shorter than 36 inches, tell them to eat their Wheaties
-
-
-
-
+String dimes = JOptionPane.showInputDialog("How many dimes do you have?");
+int dimesint  = Integer.parseInt(dimes);
+JOptionPane.showMessageDialog(null, "That's " + dimesint*10 + " cents!");
+String tall =JOptionPane.showInputDialog("How tall are you? (inches please!)");
+int inttall = Integer.parseInt(tall);
+if (inttall< 36) 
+	JOptionPane.showMessageDialog(null, "Eat your Wheaties!");
 }
 
 void skill2() { // Write a loop to print every third number between 1 and 30 to the console 
