@@ -1,4 +1,3 @@
-
 import java.util.Random;
 
 import javax.swing.JOptionPane;
@@ -34,9 +33,9 @@ void skill2() {
 
 void skill3() {
 Random iamagenerator = new Random();
-int num1 = iamagenerator.nextInt(20);
-int num2 = iamagenerator.nextInt(10);
-JOptionPane.showMessageDialog(null, "Random Number <10 - Random Number Less than 20 = " + (num1 - num2));
+int num1 = iamagenerator.nextInt(21);
+int num2 = iamagenerator.nextInt(11);
+JOptionPane.showMessageDialog(null, "Random Number <20 - <10 = " + (num1 - num2));
 }
 
 void skill4() {
